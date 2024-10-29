@@ -1,6 +1,6 @@
 syntax="proto3";
 
-option go_package="./;services";    // 对应：生成位置;包名
+option go_package="./;pbfiles";    // 对应：生成位置;包名
 
 message  ProdRequest {
     int32 prod_id =1;   //传入的商品ID
@@ -10,6 +10,8 @@ message ProdResponse{
     int32 prod_stock=1;//商品库存
 }
 
- 
+service ProdService {
+    rpc GetProdStock (ProdRequest) returns (ProdResponse);
+}
 
 
