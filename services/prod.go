@@ -10,7 +10,7 @@ type ProdService struct {
 }
 
 func (s *ProdService) GetProdStock(ctx context.Context, in *services.ProdRequest) (*services.ProdResponse, error) {
-	return &services.ProdResponse{ProdStock: 20}, nil
+	return &services.ProdResponse{ProdStock: 25}, nil
 }
 
 //func (s *ProdService) mustEmbedUnimplementedProdServiceServer() {
