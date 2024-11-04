@@ -1,3 +1,23 @@
+grpc
+
+### 安装grpc
+```shell
+go get -u google.golang.org/grpc
+```
+
+### 下载protoc
+https://github.com/protocolbuffers/protobuf/releases/tag/v28.3
+加环境变量
+
+### 安装protoc-gen-go
+```shell
+# 弃用
+go get github.com/golang/protobuf/protoc-gen-go
+# 替换
+go install google.golang.org/protobuf/cmd/protoc-gen-go@latest 
+```
+
+
 ```shell
 # 安装
 go get github.com/golang/protobuf/protoc-gen-go
